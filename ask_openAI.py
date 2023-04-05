@@ -19,7 +19,7 @@ def ask_openAI(message,api_key):
 
     except error.AuthenticationError:
         error_message = Fore.YELLOW + "Incorrect API key provided. You can find your API key at https://platform.openai.com/account/api-keys.\n" \
-                        "Change your API key by using command: changekey <your new key>" + Style.RESET_ALL
+                        "Change your API key by using command: /changekey <your new key>" + Style.RESET_ALL
         return ('key-err',error_message)
     except Exception as err:
         error_message = Fore.YELLOW + "Server error, please try again later" + Style.RESET_ALL
