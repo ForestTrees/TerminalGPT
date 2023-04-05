@@ -11,7 +11,7 @@ print(Fore.YELLOW + 'Welcome to use terminalGPT, please enter help to see how to
 api_key = keyConfig.get_key()
 message = []
 commands = ['changekey','help']
-input_message = input("Enter you question：")
+input_message = input("")
 
 while input_message != 'exit':
 
