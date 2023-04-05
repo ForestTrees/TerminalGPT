@@ -1,10 +1,14 @@
 import configparser
 from colorama import Fore, Back, Style
+import os
 
 def get_key():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_path = os.path.join(script_dir, 'config.ini')
     # 读取INI文件
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    config.read(config_path)
+    # config.read('config.ini')
 
     # 获取key变量
     key = config.get('Section1', 'key', fallback='')

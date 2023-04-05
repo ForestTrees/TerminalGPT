@@ -1,11 +1,11 @@
 import keyConfig
-import ask_openAI
+import askOpenAI
 import help
 from colorama import Fore, Back, Style
 from rich.markdown import Markdown
 from rich.console import Console
 
-print(Fore.YELLOW + 'Welcome to use terminalGPT, please enter /help to see how to use it'+ Style.RESET_ALL)
+print(Fore.YELLOW + 'Hi, how can I help you?'+ Style.RESET_ALL)
 
 api_key = keyConfig.get_key()
 message = []
@@ -25,7 +25,7 @@ while input_message != '/exit':
         print(help.help_message)
     else:
         message.append({"role": "user", "content": input_message})
-        anwser = ask_openAI.ask_openAI(message, api_key)
+        anwser = askOpenAI.ask_openAI(message, api_key)
         anwser_status = anwser[0]
         anwser_text = anwser[1]
 
