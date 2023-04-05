@@ -1,5 +1,5 @@
-# terminalGPT
-terminalGPT is a project that allows you to use chatgpt in the terminal
+# TerminalGPT
+TerminalGPT is a project that allows you to use chatgpt in the terminal
 
 ## How to use
 
