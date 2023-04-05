@@ -2,6 +2,8 @@
 
 [![Platform badge](https://img.shields.io/badge/Platform-Win%2FLinux%2FMac-blue)]()  ![Bower](https://img.shields.io/bower/l/mi)
 
+[[English]](https://github.com/ForestTrees/TerminalGPT) [[中文]](https://github.com/ForestTrees/TerminalGPT/blob/main/README-CN.md) 
+
 TerminalGPT is a project that allows you to use chatgpt in the terminal
 
 ![image-20230406001303882](./README/20230406001223.png)
