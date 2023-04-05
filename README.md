@@ -1,6 +1,6 @@
 # TerminalGPT
 
-[![Platform badge](https://img.shields.io/badge/Platform-Win%2FLinux%2FMac-blue)]()![Bower](https://img.shields.io/bower/l/mi)
+[![Platform badge](https://img.shields.io/badge/Platform-Win%2FLinux%2FMac-blue)]()  ![Bower](https://img.shields.io/bower/l/mi)
 
 TerminalGPT is a project that allows you to use chatgpt in the terminal
 
@@ -65,6 +65,7 @@ TerminalGPT is a project that allows you to use chatgpt in the terminal
 - [ ] Load previous chats
 - [ ] View individual/overall token usage
 - [ ] More elegant loading animations
+- [ ] Simple Q&A - Quick Start One-Turn Q&A
 
 ## License
 
