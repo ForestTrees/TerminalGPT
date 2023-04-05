@@ -1,5 +1,10 @@
 # TerminalGPT
+
+[![Platform badge](https://img.shields.io/badge/Platform-Win%2FLinux%2FMac-blue)]()![Bower](https://img.shields.io/bower/l/mi)
+
 TerminalGPT is a project that allows you to use chatgpt in the terminal
+
+![image-20230406001303882](README\20230406001223.png)
 
 ## How to use
 
@@ -40,16 +45,26 @@ TerminalGPT is a project that allows you to use chatgpt in the terminal
 
 1. Add the folder path of this project to the system environment variable Path
 
-2. Modify `showme.bat` to your own path
+2. Modify `GPT.bat` to your own path
 
    ```bat
    @echo off
    python.exe <Your Path>\main.py
    ```
 
-3. Enter directly in the terminal: `showme` to run. 
+3. Enter directly in the terminal: `GPT` to run. 
 
-   You can also modify `showme.bat` to any name (do not change the `.bat` suffix), and then enter this name in the terminal to run the program
+   You can also modify `GPT.bat` to any name (do not change the `.bat` suffix), and then enter this name in the terminal to run the program
+
+## To do list
+
+- [x] Quick start support
+- [ ] Multi-language support
+- [ ] Start a new chat
+- [ ] Save chat
+- [ ] Load previous chats
+- [ ] View individual/overall token usage
+- [ ] More elegant loading animations
 
 ## License
 
