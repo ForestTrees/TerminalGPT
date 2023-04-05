@@ -28,7 +28,7 @@ terminalGPT is a project that allows you to use chatgpt in the terminal
 
    You can find your API key at https://platform.openai.com/account/api-keys.
 
-   `language` 目前支持英文（en）
+   `language` Currently supports English (en)
 
 4. Run the project with `python`
 
