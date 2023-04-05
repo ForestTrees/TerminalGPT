@@ -1,27 +1,46 @@
-import sys
+import markdown
+
 import keyConfig
 import ask_openAI
 from colorama import Fore, Back, Style
+from rich.markdown import Markdown
+from rich.console import Console
 
+print(Fore.YELLOW + 'Welcome to use terminalGPT, please enter help to see how to use it'+ Style.RESET_ALL)
 
 api_key = keyConfig.get_key()
+message = []
+commands = ['changekey','help']
+input_message = input("Enter you question：")
 
+while input_message != 'exit':
 
-if len(sys.argv) > 1:
-    arg1 = sys.argv[1]
-    if arg1 == 'changekey':
-        if len(sys.argv) == 3:
-            keyConfig.change_key(sys.argv[2])
+    if input_message.startswith('/changekey'):
+        args = input_message.split()
+        if len(args) != 2:
+            print("Incorrect command :/changekey <Your new key>")
         else:
-            print("command error: changekey <your new key>")
+            keyConfig.change_key(args[1])
+            api_key = args[1]
+    elif input_message == '/help':
+        print("help message")
     else:
-        input_message = ask_openAI.get_message(sys.argv)
-        ask_openAI.start_conversation(input_message,api_key)
+        message.append({"role": "user", "content": input_message})
+        anwser = ask_openAI.ask_openAI(message, api_key)
+        anwser_status = anwser[0]
+        anwser_text = anwser[1]
 
-else:
-    print(Fore.YELLOW + 'Welcome to use terminalGPT, please enter help to see how to use it'+ Style.RESET_ALL)
-    input_message = input("Enter you question：")
+        if anwser_status != 'success':
+            message = message[:-1]
+            print(anwser_text)
+        else:
+            message.append({"role": "assistant", "content": anwser[1]})
+            console = Console()
+            anwser_text = Markdown(anwser_text)
 
-#print()
+            console.print(anwser_text)
+
+    input_message = input("")
+
 
 

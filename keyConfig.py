@@ -1,4 +1,5 @@
 import configparser
+from colorama import Fore, Back, Style
 
 def get_key():
     # 读取INI文件
@@ -25,4 +26,4 @@ def change_key(newKey):
     config.set('Section1', 'key', newKey)
     with open('config.ini', 'w') as configfile:
         config.write(configfile)
-    print('api-key changed successfully')
+    print( Fore.YELLOW +'api-key changed successfully' + Style.RESET_ALL)
