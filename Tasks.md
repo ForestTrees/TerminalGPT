@@ -1,9 +1,10 @@
 # Tasks
 
-- [x] 支持快速启动
-- [ ] 多语言支持
-- [ ] 开启新聊天
-- [ ] 保存聊天
-- [ ] 加载之前的聊天内容
-- [ ] 查看单个、总体token使用情况
-- [ ] 更优雅的加载动画
+- [x] Quick start support
+- [ ] Multi-language support
+- [ ] Start a new chat
+- [ ] Save chat
+- [ ] Load previous chats
+- [ ] View individual/overall token usage
+- [ ] More elegant loading animations
+
