@@ -62,7 +62,7 @@ TerminalGPT is a project that allows you to use chatgpt in the terminal
 
 - [x] Quick start support
 - [ ] Multi-language support
-- [ ] Start a new chat
+- [x] Start a new chat
 - [ ] Save chat
 - [ ] Load previous chats
 - [ ] View individual/overall token usage

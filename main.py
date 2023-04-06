@@ -23,6 +23,9 @@ while input_message != '/exit':
             api_key = args[1]
     elif input_message == '/help':
         print(help.help_message)
+    elif input_message == '/new':
+        message = []
+        print(Fore.YELLOW + 'New session start'+ Style.RESET_ALL)
     else:
         message.append({"role": "user", "content": input_message})
         anwser = askOpenAI.ask_openAI(message, api_key)
