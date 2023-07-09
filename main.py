@@ -13,8 +13,9 @@ commands = ['changekey','help']
 input_message = input("")
 
 while input_message != '/exit':
-
-    if input_message.startswith('/changekey'):
+    if input_message is None or input_message.strip() == '':
+        pass
+    elif input_message.startswith('/changekey'):
         args = input_message.split()
         if len(args) != 2:
             print("Incorrect command :/changekey <Your new key>")
@@ -29,18 +30,18 @@ while input_message != '/exit':
     else:
         message.append({"role": "user", "content": input_message})
         anwser = askOpenAI.ask_openAI(message, api_key)
-        anwser_status = anwser[0]
-        anwser_text = anwser[1]
+        # anwser_status = anwser[0]
+        # anwser_text = anwser[1]
 
-        if anwser_status != 'success':
-            message = message[:-1]
-            print(anwser_text)
-        else:
-            message.append({"role": "assistant", "content": anwser[1]})
-            console = Console()
-            anwser_text = Markdown(anwser_text)
-
-            console.print(anwser_text)
+        # if anwser_status != 'success':
+        #     message = message[:-1]
+        #     print(anwser_text)
+        # else:
+        #     message.append({"role": "assistant", "content": anwser[1]})
+        #     console = Console()
+        #     anwser_text = Markdown(anwser_text)
+        #
+        #     console.print(anwser_text)
 
     input_message = input("")
 

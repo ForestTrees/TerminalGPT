@@ -25,7 +25,7 @@ TerminalGPT 可以让你在终端中使用 chatgpt
    pip install colorama
    ```
 
-3. 创建一个名为`config.ini`的文件并写入以下信息：
+3. 创建一个名为`config.ini`的文件并将你的 openAI key 填写到文件当中：
 
    ```ini
    [Section1]
@@ -65,8 +65,8 @@ TerminalGPT 可以让你在终端中使用 chatgpt
 - [x] 开始新聊天
 - [ ] 保存聊天
 - [ ] 加载以前的聊天记录
-- [ ] 查看个人/整体代币使用情况
-- [ ] 更优雅的加载动画
+- [ ] 查看个人/整体 token 使用情况
+- [x] 逐字加载回答结果
 - [ ] 简单问答 - 快速启动一回合制问答
 
 ## License

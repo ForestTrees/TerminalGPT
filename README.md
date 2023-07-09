@@ -25,7 +25,7 @@ TerminalGPT is a project that allows you to use chatgpt in the terminal
    pip install colorama
    ```
 
-3. Create a file named `config.ini` and write the following information:
+3. Open the file named `config.ini` and fill in your openAI key into the file:
 
    ```ini
    [Section1]
@@ -66,7 +66,7 @@ TerminalGPT is a project that allows you to use chatgpt in the terminal
 - [ ] Save chat
 - [ ] Load previous chats
 - [ ] View individual/overall token usage
-- [ ] More elegant loading animations
+- [x] Load answer results verbatim
 - [ ] Simple Q&A - Quick Start One-Turn Q&A
 
 ## License
